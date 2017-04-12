@@ -190,3 +190,4 @@ Now add some todos, click on the a couple delete buttons, and there they are gon
 
 Ok, so in this lesson we covered how to delete a specific Todo. To implement this, we first gave each Todo a unique id, and then made sure we passed that id into each Todo component. Then we made sure to send along that information when dispatching an action. Finally, we had our reducer update the state by filtering out the Todo to be deleted.
 
+wot is the wot
