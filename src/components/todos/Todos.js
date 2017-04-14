@@ -6,7 +6,8 @@ class Todos extends Component {
   render() {
 
     const todos = this.props.store.getState().todos.map((todo, index) => {
-      return <Todo text={todo.text} key={index} />
+      return <Todo text={todo.text} key={index} store={this.props.store} id={todo.id}/>
+      //where is the todo text and id coming from?
     });
 
     return(
