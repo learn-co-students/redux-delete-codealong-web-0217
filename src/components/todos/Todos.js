@@ -4,11 +4,10 @@ import Todo from './Todo'
 class Todos extends Component {
 
   render() {
-
+ 
     const todos = this.props.store.getState().todos.map((todo, index) => {
-      return <Todo text={todo.text} key={index} />
+      return <Todo text={todo.text} key={index} store={this.props.store} /> 
     });
-
     return(
       <ul>
         {todos}
